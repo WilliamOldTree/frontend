@@ -1,0 +1,48 @@
+
+.layout1{
+    width: 960px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.layout2{
+    width: 960px;
+    display:flex;
+     
+}
+.layout2A{
+    
+    flex:20%;
+    background-color: chartreuse;
+}
+
+.layout2B{
+    flex:80%;
+    background-color: rgb(223, 27, 27);
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+
+.layout2B h2{
+    margin-bottom: 0px;
+}
+
+.layout2B h3{
+    margin-top: 0px;
+}
+
+.layout2B h4{  
+  margin-top: 0px;
+}
+
+#nfl_ancora{
+    display: flex;
+    justify-content:space-evenly;        
+}
+
+.layout3{
+    width: 960px;
+    display: flex;
+    background-color: blue;
+}
