@@ -19,8 +19,23 @@ body{
     font-size: 16px;
     text-align: center;
     padding-top: 15px;
+    
 }
 
+#aero{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#queen{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
 
 .layout2B{
     flex:70%;
@@ -63,3 +78,10 @@ body{
     color: black;
     
 }
+
+.layout3{
+    color: azure;
+    justify-content: right;
+    padding-right: 10px;
+}
+
