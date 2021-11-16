@@ -1,0 +1,26 @@
+.main{
+    background-color: #303030;
+}
+.botom{
+    background-color: red;
+    color: white;
+}
+#conta{
+    color: white;
+}
+#cliente{
+    color: white;
+}
+#modo{
+    color: white;
+}
+#carrinho{
+    background:#009e2a;
+    color:white;
+}
+.pesquisa{
+    background-color: #424242;
+}
+.pesquisa span{
+    color: white;
+}
