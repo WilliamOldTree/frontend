@@ -1,121 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pichau - Os Melhores preços do Brasil | Pichau  pichau.com.br</title>
-    <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pichau - Os melhores preços do Brasil | Pichau pichau.com.br</title>
+  <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
-     <!--header-->
-    <div class="container-fluid main">
-        <div class="row">
-            <!--logo-->
-            <div class="col-4 ">
-                <img src="./image/logo-pichau-2021-dark.png" alt=""width="200"> 
+  <!--begin main-->
+  <div class="container-fluid main">
+
+    <!--begin header-->
+    <div class="container header">
+      <div class="row align-items-center">
+        <!--logo-->
+        <div class="col-3">
+          <img src="./image/logo-pichau-2021-dark.png" alt="" width="200">
+        </div>
+        <!--begin navegacao-->
+        <div class="col-5 navegacao">
+          <nav>
+            <div class="d-flex justify-content-end">
+              <div class="p-3 bd-highlight">Minha conta<br><strong>ENTRAR / CADASTRO</strong>
+                <img src="./image/round-account-button-with-user-inside.png" alt="" width="25">
+              </div>
+              <div class="p-3 bd-highlight">Atendimento <br><strong>AO CLIENTE</strong>
+                <img src="./image/atendimento.png" alt="" width="28">
+              </div>
+              <div class="p-3 bd-highlight">Modo<br><strong>CLARO</strong>
+                <img src="./image/brightness.png" alt="" width="25">
+              </div>
             </div>
-            <!--navegação-->
-            <div class="col-4">
-                <nav class="d-flex flex-row-reverse">
-                    <ul class="d-flex" style="list-style-type: none;">
-                        <li>
-                            <div class="d-flex">
-                                <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #e90313;">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
-                                </svg>
-                                <div id=conta>
-                                    <span>Minha conta</span>
-                                    <br>
-                                    <strong>
-                                        <a>Entrar</a>/<a>Cadastro</a>
-                                    </strong>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex">
-                                <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #e90313;">
-                                    <path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-3.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"></path>
-                                </svg>
-                                <div id=cliente>
-                                    <span>Atendimento</span>
-                                    <br>
-                                    <strong>Ao cliente</strong>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex">
-                                <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #e90313;">
-                                    <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-                                </svg>
-                                <div id=modo>
-                                    <span>Modo</span>
-                                    <br>
-                                    <strong>Claro</strong>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>   
-                </nav>
-                
+          </nav>
+        </div>
+        <!--end navegacao-->
+
+        <!-- begin carrinho-->
+        <div class="col-4 carrinho justify-content-start">
+          <div class="p-3 d-flex">
+            <div class="btn-group d-inline-flex" role="group" aria-label="">
+              <button type="button" class="btn"><img src="./image/shopping-cart.png" alt=""
+                  width="25"><strong>CARRINHO</strong><br>Produto</button>
             </div>
-            <!--carrinho-->
-            <div class="col-4">
-                <button type="button" class="btn "id=carrinho><strong>Carrinho</strong></button>
+          </div>
+        </div>
+      </div>
+      <!--end carrinho-->
+
+      <div class="row align-items-center">
+        <!--canvas-->
+        <div class="col-4 d-flex justify-content-start">
+          <a class="btn canvas d-flex align-items-center" data-bs-toggle="offcanvas"  href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample"><img src="./image/botao-de-menu-de-tres-linhas-horizontais.png" alt="" width="25"> Acesse todos os<br><strong>DEPARTAMENTOS</strong>
+
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--end canvas-->
+
+        <!--begin search-->
+        <div class="col-8  px-5 search d-flex justify-content-end">
+          <input type="search" class="input-search" placeholder="Digite aqui o que voce procura">
         </div>
 
-        <!--canvas-->
-        <div class="row">
-            <div class="col-4">
-                <a class="btn botom" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    Acesse todos os <h4>DEPARTAMENTOS</h4>
-                </a>
-                
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">PICHAU</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    
-                    <div class="offcanvas-body">
-                        <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                        </div>
-                        
-                        <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                Dropdown button
-                            </button>
-    
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8">
-                <nav class="navbar pesquisa">
-                    <div class="container-fluid">
-                      <span class="navbar-text">
-                        Digite aqui o  que você procura !
-                      </span>
-                    </div>
-                  </nav>
-            </div>        
-        </div>    
-    
+      </div>
+    </div>
+    <!--end header-->
+
+    <!--banner-->
+    <div class="row align-items-center">
+      <div class="container p-0">
+        <img src="./image/banner2.jpg" alt="">
+      </div>
     </div>
 
-   
+  </div>
+  <!--end main-->
+
+
+  </div>
 </body>
 <script src="./js/bootstrap.bundle.min.js"></script>
+
 </html>
