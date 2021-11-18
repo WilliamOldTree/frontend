@@ -1,116 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pichau - Os melhores preços do Brasil | Pichau pichau.com.br</title>
-  <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pichau - Os melhores preços do Brasil | Pichau pichau.com.br</title>
+    <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 
 </head>
 
 <body>
-  <!--begin main-->
-  <div class="container-fluid main">
+    <!--begin main-->
+    <div class="container-fluid main">
+        <div class="row p-3">
+            <div class="col-2">
+            </div>
 
-    <!--begin header-->
-    <div class="container header">
-      <div class="row align-items-center">
-        <!--logo-->
-        <div class="col-3">
-          <img src="./image/logo-pichau-2021-dark.png" alt="" width="200">
+            <div class="col-2 p-3 d-flex justify-content-start">
+                <img src="./image/logo-pichau-2021-dark.png" alt="" width="200">
+            </div>
+            <div class="col-4 p-2 ">
+                <nav>
+                    <ul class="d-flex justify-content-evenly navegacao">
+                        <li id="login">Minha conta<br><strong>ENTRAR / CADASTRO</strong> </li>
+                        <li id="cliente">Atendimento<br><strong>AO CLIENTE</strong></li>
+                        <li id="modo">Modo<br><strong>CLARO</strong></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around carrinho">
+                <img src="./image/shopping-cart.png" alt="carrinho" width="30">
+                <button class="btn-carrinho"><strong>Carrinho</strong><br>Produtos</button>
+            </div>
+
+            <div class="col-2">
+            </div>
         </div>
-        <!--begin navegacao-->
-        <div class="col-5 navegacao">
-          <nav>
-            <div class="d-flex justify-content-end">
-              <div class="p-3 bd-highlight">Minha conta<br><strong>ENTRAR / CADASTRO</strong>
-                <img src="./image/round-account-button-with-user-inside.png" alt="" width="25">
-              </div>
-              <div class="p-3 bd-highlight">Atendimento <br><strong>AO CLIENTE</strong>
-                <img src="./image/atendimento.png" alt="" width="28">
-              </div>
-              <div class="p-3 bd-highlight">Modo<br><strong>CLARO</strong>
-                <img src="./image/brightness.png" alt="" width="25">
-              </div>
-            </div>
-          </nav>
-        </div>
-        <!--end navegacao-->
 
-        <!-- begin carrinho-->
-        <div class="col-4 carrinho justify-content-start">
-          <div class="p-3 d-flex">
-            <div class="btn-group d-inline-flex" role="group" aria-label="">
-              <button type="button" class="btn"><img src="./image/shopping-cart.png" alt=""
-                  width="25"><strong>CARRINHO</strong><br>Produto</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end carrinho-->
 
-      <div class="row align-items-center">
-        <!--canvas-->
-        <div class="col-4 d-flex justify-content-start">
-          <a class="btn canvas d-flex align-items-center" data-bs-toggle="offcanvas"  href="#offcanvasExample" role="button"
-            aria-controls="offcanvasExample"><img src="./image/botao-de-menu-de-tres-linhas-horizontais.png" alt="" width="25"> Acesse todos os<br><strong>DEPARTAMENTOS</strong>
+        <!--begin canvas-->
+        <div class="row justify-content-center">
 
-          </a>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
-              </div>
-              <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-bs-toggle="dropdown">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
+            <div class="col-6 d-flex align-items-center justify-content-around  canvas p-1 mb-2">
+                <img src="./image/botao-de-menu-de-tres-linhas-horizontais.png" alt="menu" width="30">
+                <a class="btn btn-canvas" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    >
+                    <strong>DEPARTAMENTOS</strong>
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-          </div>
+            <!--begin search-->
+            <div class="col-6  px-5 search d-flex justify-content-center search align-items-center">
+                <input type="search" class="input-search align-top" placeholder="Digite aqui o que voce procura">
+            </div>
+
         </div>
         <!--end canvas-->
 
-        <!--begin search-->
-        <div class="col-8  px-5 search d-flex justify-content-end">
-          <input type="search" class="input-search" placeholder="Digite aqui o que voce procura">
+        <!-- begin banner -->
+        <div class="row align-items-center">
+            <div class="col p-0">
+                <img src="./image/banner2.jpg" alt="">
+            </div>
         </div>
 
-      </div>
+        <!-- begin carroseul -->
+        <div class="row align-items-top  justify-content-center mt-5 ">
+            <div class="col-2">
+            </div>
+
+            <div class="col-2 c1 ">
+                <img src="./image/910-006126.jpg" alt="mouse" width="250">
+                <div class="col-9 c1 d-flex justify-content-center align-items-center">
+                    <ul>
+                        <li>Mouse Sem Fio Logitech M220, 1000DPI, 3 Botoes, Rosa, 910-006126</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./image/bx8071512900k2.jpg" alt="processador" width="250">
+                <div class="col-9 c1 d-flex justify-content-center align-items-center">
+                    <ul>
+                        <li>Processador Intel Core i9-12900K, 16-Core, 24-Threads, 3.2GHz (5.2GHz Turbo), Cache 30MB, LGA1700, BX8071512900K</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./image/pg-sgebk-rgb-v021.jpg" alt="cooler" width="250">
+                <div class="col-9 c1 d-flex justify-content-center">
+                    <ul>
+                        <li>Cooler Para Processador Pichau Sage V2, RGB, 120mm, PG-SGEBK-RGB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./image/tgt-cbn-rgb01_1.jpg" alt="pc-gamer" width="250">
+                <div class="col-9 c1 d-flex justify-content-center">
+                    <ul>
+                        <li>Gabinete Gamer TGT Carbon, Rainbow, Mid Tower, Lateral de Vidro, Preto, TGT-CBN-RGB01</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-2">
+            </div>
+        </div><!-- end carroseul -->
+
+        <!-- footer -->
+        <div class="row align-items-center  justify-content-center mt-5">
+            <div class="col-2">espaco</div>
+            <div class="col-8">footer</div>
+            <div class="col-2">espaco</div>
+        </div>
+
     </div>
-    <!--end header-->
-
-    <!--banner-->
-    <div class="row align-items-center">
-      <div class="container p-0">
-        <img src="./image/banner2.jpg" alt="">
-      </div>
-    </div>
-
-  </div>
-  <!--end main-->
+    <!--end main-->
 
 
-  </div>
+
 </body>
+
 <script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>
