@@ -10,144 +10,209 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
-
 </head>
 
-<body>
-    <!--begin main-->
-    <div class="container-fluid main">
-        <div class="row p-3">
-            <div class="col-2">
+<body class="d-flex flex-column align-items-center">
+    <header class="w-100 my-container p-4 pb-0">
+        <div class="row">
+            <div class="col-4 logo">
+                <img src="./image/logo-pichau-2021-dark.png" alt="logo" height="50px">
             </div>
+            <nav class="col-8 d-flex justify-content-end nav" style="font-size: 10px">
+                <a class="d-flex align-items-center text-light text-decoration-none">
+                    <img class="m-2 icon" src="./image/round-account-button-with-user-inside.png" alt="minha conta">
+                    <span class="m-2">
+                        MINHA CONTA<br>
+                        <span class="strong">ENTRAR / CADASTRO</span>
+                    </span>
+                </a>
+                <a class="d-flex align-items-center text-light text-decoration-none">
+                    <img class="m-2 icon" src="./image/atendimento.png" alt="atendimento">
+                    <span class="m-2">
+                        ATENDIMENTO<br><span class="strong">AO CLIENTE</span>
+                    </span>
+                </a>
+                <a class="d-flex align-items-center text-light text-decoration-none">
+                    <img class="m-2 icon" src="./image/brightness.png" alt="estilo">
+                    <span class="m-2">
+                        MODO<br>
+                        <span class="strong">CLARO</span>
+                    </span>
+                </a>
 
-            <div class="col-2 p-3 d-flex justify-content-start">
-                <img src="./image/logo-pichau-2021-dark.png" alt="" width="200">
-            </div>
-            <div class="col-4 p-2 ">
-                <nav>
-                    <ul class="d-flex justify-content-evenly navegacao">
-                        <li id="login">Minha conta<br><strong>ENTRAR / CADASTRO</strong> </li>
-                        <li id="cliente">Atendimento<br><strong>AO CLIENTE</strong></li>
-                        <li id="modo">Modo<br><strong>CLARO</strong></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-2 d-flex align-items-center justify-content-around carrinho">
-                <img src="./image/shopping-cart.png" alt="carrinho" width="30">
-                <button class="btn-carrinho"><strong>Carrinho</strong><br>Produtos</button>
-            </div>
-
-            <div class="col-2">
-            </div>
+                <button class="d-flex fs-6 align-items-center p-2 text-light green-button rounded-3">
+                    <img class="icon m-2" src="./image/shopping-cart.png" alt="carrinho">
+                    <span class="m-2"><span class="strong">CARRINHO</span><br>0 PRODUTO</span>
+                </button>
+            </nav>
         </div>
 
-
-        <!--begin canvas-->
-        <div class="row justify-content-center">
-
-            <div class="col-6 d-flex align-items-center justify-content-around  canvas p-1 mb-2">
-                <img src="./image/botao-de-menu-de-tres-linhas-horizontais.png" alt="menu" width="30">
-                <a class="btn btn-canvas" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    >
-                    <strong>DEPARTAMENTOS</strong>
-                </a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
+        <div class="row align-items-center">
+            <div class="col-4 canvas">
+                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                    class="d-flex fs-6 justify-content-around align-items-center text-end w-100 red-button text-light rounded-3 mb-2">
+                    <img class="m-2 icon" src="./image/botao-de-menu-de-tres-linhas-horizontais.png"
+                        alt="departamentos">
+                    <span class="m-2">
+                        ACESSE TODOS OS<br><span class="strong">DEPARTAMENTOS</span>
+                    </span>
+                </button>
+                  
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
-                            text, images, lists, etc.
-                        </div>
-                        <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
+                      <div>
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                      </div>
+                      <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
-
-            <!--begin search-->
-            <div class="col-6  px-5 search d-flex justify-content-center search align-items-center">
-                <input type="search" class="input-search align-top" placeholder="Digite aqui o que voce procura">
-            </div>
-
-        </div>
-        <!--end canvas-->
-
-        <!-- begin banner -->
-        <div class="row align-items-center">
-            <div class="col p-0">
-                <img src="./image/banner2.jpg" alt="">
+            <div class="col-8 p-1  rounded-3 search mb-2 " style="background-color: #424242;">
+                <input class="w-100 form-control" style="background-color: #424242; border-color: #424242; " type="text"
+                    placeholder="Digite aqui o que voce procura">
             </div>
         </div>
+    </header>
 
-        <!-- begin carroseul -->
-        <div class="row align-items-top  justify-content-center mt-5 ">
-            <div class="col-2">
-            </div>
+    <section class="container-fluid p-0">
+        
+            
+                <img src="./image/banner2.jpg" alt="" width="100%">
+            
+    </section>
 
-            <div class="col-2 c1 ">
-                <img src="./image/910-006126.jpg" alt="mouse" width="250">
-                <div class="col-9 c1 d-flex justify-content-center align-items-center">
-                    <ul>
-                        <li>Mouse Sem Fio Logitech M220, 1000DPI, 3 Botoes, Rosa, 910-006126</li>
-                    </ul>
+    <section>
+        <div class="w-100 my-container p-4 pb-0">
+            <div class="d-flex flex-wrap justify-content-evenly">
+                <div class="p-2 col-6 col-md-4 col-lg-3">
+                    <img class="w-100" src="./image/910-006126.jpg" alt="mouse">
                 </div>
-            </div>
-            <div class="col-2">
-                <img src="./image/bx8071512900k2.jpg" alt="processador" width="250">
-                <div class="col-9 c1 d-flex justify-content-center align-items-center">
-                    <ul>
-                        <li>Processador Intel Core i9-12900K, 16-Core, 24-Threads, 3.2GHz (5.2GHz Turbo), Cache 30MB, LGA1700, BX8071512900K</li>
-                    </ul>
+                <div class="p-2 col-6 col-md-4 col-lg-3">
+                    <img class="w-100" src="./image/bx8071512900k2.jpg" alt="processador">
                 </div>
-            </div>
-            <div class="col-2">
-                <img src="./image/pg-sgebk-rgb-v021.jpg" alt="cooler" width="250">
-                <div class="col-9 c1 d-flex justify-content-center">
-                    <ul>
-                        <li>Cooler Para Processador Pichau Sage V2, RGB, 120mm, PG-SGEBK-RGB</li>
-                    </ul>
+                <div class="p-2 col-6 col-md-4 col-lg-3">
+                    <img class="w-100" src="./image/pg-sgebk-rgb-v021.jpg" alt="cooler">
                 </div>
-            </div>
-            <div class="col-2">
-                <img src="./image/tgt-cbn-rgb01_1.jpg" alt="pc-gamer" width="250">
-                <div class="col-9 c1 d-flex justify-content-center">
-                    <ul>
-                        <li>Gabinete Gamer TGT Carbon, Rainbow, Mid Tower, Lateral de Vidro, Preto, TGT-CBN-RGB01</li>
-                    </ul>
+                <div class="p-2 col-6 col-md-4 col-lg-3">
+                    <img class="w-100" src="./image/tgt-cbn-rgb01_1.jpg" alt="pc-gamer">
                 </div>
-            </div>
 
-            <div class="col-2">
             </div>
-        </div><!-- end carroseul -->
-
-        <!-- footer -->
-        <div class="row align-items-center  justify-content-center mt-5">
-            <div class="col-2">espaco</div>
-            <div class="col-8">footer</div>
-            <div class="col-2">espaco</div>
         </div>
+    </section>
 
-    </div>
-    <!--end main-->
 
+    <footer class="container-fluid" style="background-color: #424242;">
+        <div class="row my-container mx-auto">
+            <div class="col">
+                <h5 style="color: #e90313"><strong>INSTITUCIONAL</strong></h5>
+                <ul class="ps-0" style="list-style-type: none;">                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"
+                            href="https://www.pichau.com.br/quem-somos">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="https://www.pichau.com.br/quem-somos">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="https://www.pichau.com.br/quem-somos">Nossas
+                            lojas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 style="color: #e90313"><strong>DUVIDAS</strong></h5>
+                <ul class="ps-0" style="list-style-type: none;">                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"
+                            href="https://www.pichau.com.br/termos-de-aceite#entrega">Entrega</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light"
+                            href="https://www.pichau.com.br/termos-de-aceite#garantia">Garantia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light"
+                            href="https://www.pichau.com.br/termos-de-aceite#comocomprar">Como comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light"
+                            href="https://www.pichau.com.br/termos-de-aceite#formaspagamento">Formas de
+                            pagamento</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 style="color: #e90313"><strong>AJUDA</strong></h5>
+                <ul class="ps-0" style="list-style-type: none;">                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"
+                            href="https://sac.pichau.com.br/support/home">SAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="https://www.pichau.com.br/quem-somos">Fale
+                            conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="https://www.pichau.com.br/termos-de-aceite">Termos e
+                            aceite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light"
+                            href="https://www.pichau.com.br/politica-de-privacidade">Politica de
+                            privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-center" style="color: #e90313"><strong>PAGAMENTOS</strong></h5>
+                <ul class="row ps-0" style="list-style-type: none;">                    
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/visa.png" alt="pc-gamer" width="50%">
+                    </li>
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/mastercard.png" alt="pc-gamer" width="50%">
+                    </li>
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/american.png" alt="pc-gamer" width="50%">
+                    </li>
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/pix.png" alt="pc-gamer" width="50%">
+                    </li>
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/paypal.png" alt="pc-gamer" width="50%">
+                    </li>
+                    <li class="nav-item col-6 p-2 justify-content-center">
+                        <img src="./image/boleto.png" alt="pc-gamer" width="50%">
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 style="color: #e90313"><strong>NEWSLETTER</strong></h5>
+                <ul class="ps-0" style="list-style-type: none;">                    
+                    <input class="w-100 form-control" style="background-color:white; border-color: #424242; "
+                        type="text" placeholder="Digite aqui o que voce procura">
+            </div>
+        </div>
+    </footer>
 
 
 </body>
+
+</html>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 

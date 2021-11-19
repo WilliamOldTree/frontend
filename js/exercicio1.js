@@ -44,4 +44,29 @@ function alerta(){
 
 function altFundo(){
 
+    let $body = document.body;
+    $body.style.backgroundColor = "red";
 }
+
+function alerta2(){
+    alert("estou vendo a imagem")
+}
+
+document.getElementById("img").addEventListener("click",()=>{
+    alert("estou vendo a imagem pelo JS")
+} )
+
+document.body.addEventListener("click", function(){
+    this.style.backgroundColor="red"
+})
+
+document.getElementById("troca").addEventListener("click",(event)=>{
+    event.preventDefault()
+    alert("não pode ser enviado")
+})
+
+document.getElementById("img2").addEventListener("click",(event)=>{
+    alert("X"+event.offsetX+" "+ "Y"+event.offsetY);
+    
+})
+
