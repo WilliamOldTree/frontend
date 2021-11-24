@@ -36,7 +36,9 @@
 //     default: console.log("Nota invalida");
 // }
 	    
-
+console.log(
+    let newCar=document.getElementById("carro")
+)
 function alerta(){
     alert("Ola")
     
